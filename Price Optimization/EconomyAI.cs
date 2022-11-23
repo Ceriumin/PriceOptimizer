@@ -7,37 +7,37 @@ namespace Ceriumin
 {
     public class EconomyAI : MonoBehaviour
     {
-        //Version 1.0.1
+        //Version 1.0.1 A
         
         [Header("Price Statistics")]
         [Tooltip("Set your desired price"), SerializedField]   
-        private  float originalPrice;
+        private float originalPrice;
         [Tooltip("The price it is adjusted from"), SerializedField]   
-        private  float beforeAdjustment;
+        private float beforeAdjustment;
         [Tooltip("The adjusted price after inflation"), SerializedField]  
-        private  float adjustedPrice;
+        private float adjustedPrice;
         [SerializedField]    
-        private  string inflationRate;
+        private string inflationRate;
         [Space(5)]
 
         [Header("Independent Variables")]
         [Range(0, 100), SerializedField]
-        private  int demand;
+        private int demand;
         [Range(0, 100), SerializedField]
-        private  int supply;
+        private int supply;
         [Space(5)]
 
         [Header("Debug"), Tooltip("Weight affects how strong the price change is")]
         [SerializedField]
-        private  float weight;
+        private float weight;
         [SerializedField]
-        private  float priceDelay;
+        private float priceDelay;
         [SerializedField]
-        private  bool setPrice;
+        private bool setPrice;
 
         private float setDelay;
-        private  float supplyRate = 0f;
-        private  float demandRate = 0f;
+        private float supplyRate = 0f;
+        private float demandRate = 0f;
 
         void Update()
         {
