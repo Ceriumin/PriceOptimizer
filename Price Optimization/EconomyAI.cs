@@ -7,6 +7,8 @@ namespace Ceriumin
 {
     public class EconomyAI : MonoBehaviour
     {
+        //Version 1.0.1
+        
         [Header("Price Statistics")]
         [Tooltip("Set your desired price"), SerializedField]   
         private  float originalPrice;
