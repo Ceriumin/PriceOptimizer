@@ -84,8 +84,7 @@ namespace Ceriumin
                 beforeAdjustment = adjustedPrice;
                 setDelay = priceDelay;
             }
-
-
         }
+        
     }
 }
