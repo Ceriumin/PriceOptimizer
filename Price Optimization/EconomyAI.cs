@@ -63,7 +63,7 @@ namespace Ceriumin
             //Calculating Inflation Rate
 
             var inflate = ((adjustedPrice - originalPrice) / originalPrice) * 100;
-            inflationRate = (int)inflate).ToString() + "%";
+            inflationRate = ((int)inflate).ToString() + "%");
 
             //Adjust price to 0 if it is negative
             
