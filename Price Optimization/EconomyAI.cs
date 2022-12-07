@@ -7,32 +7,32 @@ namespace Ceriumin
 {
     public class EconomyAI : MonoBehaviour
     {
-        //Version 1.0.1 A
+        //Version 1.0.2 A
         
         [Header("Price Statistics")]
-        [Tooltip("Set your desired price"), SerializedField]   
+        [Tooltip("Set your desired price"), SerializeField]   
         private float originalPrice;
-        [Tooltip("The price it is adjusted from"), SerializedField]   
+        [Tooltip("The price it is adjusted from"), SerializeField]   
         private float beforeAdjustment;
-        [Tooltip("The adjusted price after inflation"), SerializedField]  
+        [Tooltip("The adjusted price after inflation"), SerializeField]  
         private float adjustedPrice;
-        [SerializedField]    
+        [SerializeField]    
         private string inflationRate;
         [Space(5)]
 
         [Header("Independent Variables")]
-        [Range(0, 100), SerializedField]
+        [Range(0, 100), SerializeField]
         private int demand;
-        [Range(0, 100), SerializedField]
+        [Range(0, 100), SerializeField]
         private int supply;
         [Space(5)]
 
         [Header("Debug"), Tooltip("Weight affects how strong the price change is")]
-        [SerializedField]
+        [SerializeField]
         private float weight;
-        [SerializedField]
+        [SerializeField]
         private float priceDelay;
-        [SerializedField]
+        [SerializeField]
         private bool setPrice;
 
         private float setDelay;
@@ -63,7 +63,7 @@ namespace Ceriumin
             //Calculating Inflation Rate
 
             var inflate = ((adjustedPrice - originalPrice) / originalPrice) * 100;
-            inflationRate = ((int)inflate).ToString() + "%");
+            inflationRate = ((int)inflate).ToString() + "%";
 
             //Adjust price to 0 if it is negative
             
