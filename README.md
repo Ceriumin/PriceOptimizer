@@ -15,4 +15,4 @@ This repo will be updated frequently.
 4. The weight is how vigorous the price change is, the higher the value the smaller the price change (recommended 1000)
 5. Change Supply and Demand values accordingly to see the price change 
 
-(the price set coroutine is just simply there to update the price every interval, mostly for my own use)
+(the price set statement at the end is just simply there to update the price every interval, mostly for my own use)
